@@ -1,0 +1,45 @@
+/* declarar variavel no css, difinir na raiz documento */
+:root{               
+    --vermelho: #E50914;   
+    --preta: #141414;
+}
+
+/*limitar borda da caixa*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;  
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+/*efeito na class container do html*/
+header .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+/* refere-se a class logo criada no html*/
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+/*Refere-se tag nav do html, */
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+/*efeito do menu que cores mudam ao passar mouse na tag <nav> a do html */
+header nav a:hover{
+    color: #fff;
+
+}
