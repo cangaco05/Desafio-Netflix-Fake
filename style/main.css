@@ -1,29 +1,30 @@
-/* declarar variavel no css, difinir na raiz documento */
+/* DECLARA VRIAVEL NO CSS, DEFINIR NA RAIZ DOCUMENTOS */
 :root{               
     --vermelho: #E50914;   
     --preta: #141414;
 }
 
-/*limitar borda da caixa*/
+/*LIMITAR BORDA DA CAIXA*/
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;  
 }
-
+/*ELEMENTOS BASE */
 body{
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 
 }
-/*efeito na class container do html*/
+/*EFEITO NA CLASS CAONTAINER HTML*/
 header .container{
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
 }
-/* refere-se a class logo criada no html*/
+/* REFERE-SE A CLASS LOGO CRIADO NO HTML*/
 header .logo{
     margin-left: 5px;
     color: var(--vermelho);
@@ -31,15 +32,39 @@ header .logo{
     font-size: 40px;
 }
 
-/*Refere-se tag nav do html, */
+/* REFER-SE A TAG NAV HTML*/
 header nav a{
     text-decoration: none;
     color: #aaa;
     margin-right: 10px;
 }
 
-/*efeito do menu que cores mudam ao passar mouse na tag <nav> a do html */
+/*EFEITO DO MENU QUE CORES MUDAM AO PASSAR NA TAG <NAV> DO HTML */
 header nav a:hover{
     color: #fff;
 
+}
+
+/*ELEMENTOS DA class FILME-PRINCIPAL*/
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url('/img/capa-house.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+/*AJUSTANDO E CONFIGURANDO OS BUTTON DA class FILME-PRINCIPAL*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+/*AJUSTA DESCRICAO DO FILME*/
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 50px;
 }
