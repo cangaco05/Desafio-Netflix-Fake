@@ -29,8 +29,16 @@ header .logo{
     margin-left: 5px;
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
-    font-size: 40px;
+    font-size: 50px;
 }
+
+header.logof{
+    margin-left: 0px;
+    display: inline-flex;
+    height: 100px;
+}
+
+
 /*EFEITO NA TAG <NAV> TOTALMENTE DIFERENTE DO PROJETO DA AULA*/
 nav{
     text-align: center;
